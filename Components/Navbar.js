@@ -1,7 +1,10 @@
-import React from 'react'
-import Link from 'next/link';
-import NavItem from './NavItem'
-import "@/app/globals.css"
+import React from "react";
+import Link from "next/link";
+import NavItem from "./NavItem";
+import "@/app/globals.css";
+import { navItems } from "./nav-items-data";
+
+
 
 const Navbar = () => {
   return (
@@ -12,25 +15,13 @@ const Navbar = () => {
             <a>Genesys Blog</a>
           </li>
 
-          
-
-            <NavItem title={"News"} url={"/News"} />
-            <NavItem title={"Politics"} url={"/Politics"} />
-            <NavItem title={"Entertainment"} url={"/Entertainment"} />
-            <NavItem title={"Technology"} url={"/Technology"} />
-            <NavItem title={"Sports"} url={"/Sports"} />
-            <NavItem title={"Education"} url={"/Education"} />
-
-         
-
-
-            <NavItem title={"Login"} url={"/Login"} />
-
-          
+          {navItems.map((item, index) => (
+            <NavItem title={item.title} url={item.url} key={index} />
+          ))}
         </ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

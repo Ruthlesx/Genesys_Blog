@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 
- .navbar {
-  background-color: rgba(47, 47, 78, 1 );
+.navbar {
+  background-color: rgba(47, 47, 78, 1);
   height: 84px;
-  
+
 }
 
 .navbar-item {
@@ -21,7 +21,7 @@ ul {
   margin-left: 50px;
 }
 
-.nav-logo{
+.nav-logo {
   color: white;
 }
 
@@ -29,55 +29,68 @@ ul {
   color: white;
 }
 
-.search-col{
-  display: inline-flex;
-  margin-left: 80px;
-  margin-top: 20px;
-}
-
-.search-bar{
-  
+.search-col {
+  display: flex;
   border: 1px solid #000;
-   margin-left: 0px;
-   width: 580px ; 
-   display: flex ; 
-   justify-content: center;
-   border-radius: 25px;
-   
+  border-radius: 25px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.search-bar {
+
+  display: flex;
+  justify-content: center;
+
+  &:focus {
+    outline: none;
+  }
 
 }
 
-.main-news{
+.main-news {
   margin-left: 50px;
   margin-top: 15px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.other-news{
+.other-news {
   margin-top: 30px;
 
 }
 
-.first-other{
+.first-other {
   display: inline-flex;
 }
 
-.first-pic{
+.first-pic {
   width: 200px;
   height: 750px;
   background-color: blue;
 }
 
-.line{
+.line {
   margin-top: 30px;
   width: 100%;
   border: 1px solid black;
 }
 
-footer{
-  
+.feed-full-content {
+  padding: 50px;
+  margin-left: 2px;
+}
+
+.feed-images {
+    display: flex; 
+    flex-direction: column; 
+    justify-content:flex-end; 
+}
+
+footer {
+
   height: 50px;
-  background-color:aqua;
+  background-color: aqua;
 }
 
 footer div {
